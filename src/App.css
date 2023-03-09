@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.body{
+  background-image: url("https://e0.pxfuel.com/wallpapers/37/754/desktop-wallpaper-cool-website-background-best-background.jpg");
+  background-size: cover;
+  width:100%;
+  padding: 20px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-size{
+  width: 70px;
+  height: 70px;
+}
+.font-size{
+  font-size:65px ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-background{
+  background-image: url("https://e0.pxfuel.com/wallpapers/37/754/desktop-wallpaper-cool-website-background-best-background.jpg");
+  background-size: cover;
+  width:100%;
+  padding: 20px;
+  height: 100vh;
+  color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-width{
+  width: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.card-width{
+  width: 300px;
+  height: 200px; 
+}
+.hover{
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  background: #fff;
+  position: relative;
+  align-items: flex-end;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: o.6s ease-in-out;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);  
 }
 
-.App-link {
-  color: #61dafb;
+.hover:hover::before{
+  opacity: 1;
+}
+.hover:hover .text-area{
+  opacity: 1;
+  transform: translateY(0);
+}
+.hover::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient( rgb(18, 18, 18) ,transparent);
+  z-index: 1;
+  transition: 0.5s;
+  opacity: 0;
+}
+.hover img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.hover .text-area{
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.5s;
+}
+.summary{
+  height: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 750px) {
+  .body{
+   padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .input-width{
+    width: 300px;
+    border-radius: 10px;
   }
+  
 }
+
+
