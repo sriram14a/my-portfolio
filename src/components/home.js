@@ -1,5 +1,4 @@
 import { Button, IconButton } from "@mui/material";
-import Resume from "../resume/Resume.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import { Navbar } from "./navbar";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -14,7 +13,7 @@ export function Home() {
           <h1 className="text-center font-size text-light">Hi,I am Sriram</h1>
           <h5 className="mt-3 mb-3 text-center text-sm-left text-light">Full Stack Developer</h5>
           <div className="text-center text-sm-left">
-          <a className="text-decoration-none" href={Resume} download>
+          <a className="text-decoration-none" target={"_blank"} href="https://drive.google.com/file/d/1u-crq4p5AsqoxeWamfH2Xpj_j7yhyroQ/view?usp=sharing" download>
             <Button
               sx={{
                 padding: "0 20px 0 5px",
@@ -126,7 +125,14 @@ export function Home() {
           </section>
         </div>
       </div>
+ <div className="body rounded">
+  <h3 className="text-light ml-5">Professional Experience</h3>
+          <p className="ml-5 text-light">
+          Worked as a Fiber Optic Technician in Next Generation Providers,Singapore for Three years.
+          </p>
+        </div>
     </div >
+   
     </div>
   );
 }

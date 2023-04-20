@@ -1,12 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Button, TextField, IconButton } from "@mui/material";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import DownloadIcon from "@mui/icons-material/Download";
-import Resume from "../resume/Resume.pdf";
 import { Navbar } from "./navbar";
-import { display } from "@mui/system";
 
 export function Contact() {
   const form = useRef();
@@ -49,7 +47,7 @@ export function Contact() {
             <MailOutlineIcon /> sriramjs07@gmail.com
           </h6>
           <div className="mt-4">
-            <a className="text-decoration-none " href={Resume} download>
+            <a className="text-decoration-none " target={"_blank"} href="https://drive.google.com/file/d/1u-crq4p5AsqoxeWamfH2Xpj_j7yhyroQ/view?usp=sharing" download>
               <Button
                 sx={{
                   padding: "0 20px 0 5px",
@@ -125,7 +123,9 @@ export function Contact() {
           </form>
           
         </div>
+        
       </div>
+      
     </div>
   );
 }
